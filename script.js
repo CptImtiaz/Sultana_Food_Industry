@@ -90,3 +90,42 @@ document.querySelectorAll('[data-full]').forEach((card) => {
 lightbox.addEventListener('click', (event) => {
   if (event.target === lightbox) lightbox.close();
 });
+
+// Mobile menu.
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+const setMenu = (open) => {
+  navMenu.classList.toggle('is-open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+};
+menuToggle.addEventListener('click', () => setMenu(!navMenu.classList.contains('is-open')));
+navMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && navMenu.classList.contains('is-open')) {
+    setMenu(false);
+    menuToggle.focus();
+  }
+});
+
+// Header shadow once the page scrolls.
+const header = document.querySelector('.site-header');
+const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+// Fade sections in as they scroll into view.
+const revealItems = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -10% 0px' });
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('is-visible'));
+}

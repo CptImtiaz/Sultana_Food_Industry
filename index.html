@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Great+Vibes&family=Outfit:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 
@@ -34,22 +35,29 @@
   </div>
 </div>
 
-<header class="hero-wrap">
+<header class="site-header">
   <nav class="nav container" aria-label="Main">
     <a href="#top" class="brand">
       <span class="brand-mark" aria-hidden="true">S</span>
       <span class="brand-text"><span class="brand-name">Sultana</span><span class="brand-sub">FOOD INDUSTRY</span></span>
     </a>
-    <div class="nav-links">
-      <a href="#products">Products</a>
-      <a href="#packages">Packages</a>
-      <a href="#events">Events</a>
-      <a href="#promotions">Promotions</a>
-      <a href="#contact">Contact</a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="nav-menu">
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#packages">Packages</a>
+        <a href="#events">Events</a>
+        <a href="#promotions">Promotions</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" data-wa="" class="btn btn-gold">Order on WhatsApp</a>
     </div>
-    <a href="#contact" data-wa="" class="btn btn-gold">Order on WhatsApp</a>
   </nav>
+</header>
 
+<div class="hero-wrap">
   <section id="top" class="hero container two-col">
     <div class="stack-24">
       <span class="eyebrow eyebrow-gold">TRADITIONAL SWEETS · MADE IN MALAYSIA</span>
@@ -59,13 +67,19 @@
         <a href="#products" class="btn btn-gold btn-lg">See Our Sweets</a>
         <a href="#packages" class="btn btn-outline btn-lg">Wedding Packages</a>
       </div>
+      <ul class="hero-points">
+        <li>Laddoo &amp; gift boxes</li>
+        <li>Desserts &amp; drinks</li>
+        <li>Event catering</li>
+      </ul>
     </div>
     <figure class="hero-photo">
       <img src="images/hero-laddoo.jpg" alt="Laddoo piled on a brass stand, surrounded by roses, jasmine and saffron" width="990" height="1313" fetchpriority="high">
+      <img class="hero-inset" src="images/gift-box-sultana.jpg" alt="" width="1000" height="789" loading="lazy">
       <figcaption class="hero-badge">Freshly<br>made<br>daily</figcaption>
     </figure>
   </section>
-</header>
+</div>
 
 <main>
   <section class="features band-cream" aria-label="Why choose us">
@@ -79,12 +93,12 @@
   </section>
 
   <section id="products" class="container section">
-    <div class="section-head">
+    <div class="reveal section-head">
       <span class="eyebrow">OUR LADDOO</span>
       <h2>Made the traditional way</h2>
       <p class="muted lead">Rolled by hand in small batches and packed the way you need it: on a tray, one by one as wedding favours, or in our signature gift box.</p>
     </div>
-    <div class="grid-products">
+    <div class="reveal grid-products">
       <article class="card">
         <img class="card-img" src="images/laddoo-platter.jpg" alt="Stack of fresh laddoo on a gold platter" loading="lazy" width="534" height="405">
         <div class="card-body">
@@ -111,12 +125,12 @@
       </article>
     </div>
 
-    <div class="section-head sub-head">
+    <div class="reveal section-head sub-head">
       <span class="eyebrow">DESSERTS &amp; DRINKS</span>
       <h2>Chilled, light &amp; refreshing</h2>
       <p class="muted lead">Traditional pencuci mulut and drinks, made fresh every day and served by the bowl, glass or bulk for your majlis.</p>
     </div>
-    <div class="grid-feature">
+    <div class="reveal grid-feature">
       <article class="feature-card">
         <img src="images/lai-chee-kang.jpg" alt="Lai Chee Kang in a gold-rimmed glass bowl with lychee, longan, red dates and white fungus" loading="lazy" width="1000" height="915">
         <div class="feature-card-body">
@@ -140,12 +154,12 @@
 
   <section id="packages" class="packages">
     <div class="container section">
-      <div class="section-head center">
+      <div class="reveal section-head center">
         <span class="eyebrow eyebrow-gold">WEDDING &amp; EVENTS PACKAGES</span>
         <h2>Pick the size of your celebration</h2>
         <p class="lead on-dark">Every laddoo comes individually packed in a Thank You pouch. Tell us your date and we will confirm availability and price.</p>
       </div>
-      <div class="grid-packages">
+      <div class="reveal grid-packages">
         <article class="package">
           <p class="package-qty">100 <span>pcs</span></p>
           <p class="package-note">Perfect for small events</p>
@@ -166,6 +180,30 @@
     </div>
   </section>
 
+  <section id="how" class="container section">
+    <div class="reveal section-head center">
+      <span class="eyebrow">HOW TO ORDER</span>
+      <h2>Three simple steps</h2>
+    </div>
+    <ol class="reveal steps">
+      <li class="step">
+        <span class="step-num">1</span>
+        <h3>Tell us your event</h3>
+        <p class="muted">Send your date, quantity and delivery area on WhatsApp or through the form below.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">2</span>
+        <h3>Confirm your order</h3>
+        <p class="muted">We reply with availability and a quote. Choose your packaging and lock in your date.</p>
+      </li>
+      <li class="step">
+        <span class="step-num">3</span>
+        <h3>We make &amp; deliver</h3>
+        <p class="muted">Freshly made and delivered on time, anywhere in Malaysia.</p>
+      </li>
+    </ol>
+  </section>
+
   <section id="events" class="events">
     <div class="events-banner">
       <img src="images/events-ballroom.jpg" alt="Ballroom dessert table with trays of laddoo, fruit punch bowls and floral arrangements" loading="lazy" width="1120" height="1056">
@@ -181,7 +219,7 @@
         </div>
       </div>
     </div>
-    <div class="container events-strip">
+    <div class="reveal container events-strip">
       <figure><img src="images/events-garden.jpg" alt="Outdoor sunset reception with laddoo towers and candelabras" loading="lazy" width="1155" height="1116"><figcaption>Garden receptions</figcaption></figure>
       <figure><img src="images/events-table.jpg" alt="Long banquet table with laddoo trays, Lai Chee Kang and orange drinks" loading="lazy" width="1130" height="1016"><figcaption>Banquet dessert tables</figcaption></figure>
       <figure><img src="images/gift-box-sultana.jpg" alt="Sultana gift box on a wedding table" loading="lazy" width="1000" height="789"><figcaption>Gifts for your guests</figcaption></figure>
@@ -190,12 +228,12 @@
 
   <section id="promotions" class="band-cream">
     <div class="container section">
-      <div class="section-head">
+      <div class="reveal section-head">
         <span class="eyebrow">PROMOTIONS</span>
         <h2>What's new at Sultana</h2>
         <p class="muted lead">Tap a poster to see it full size.</p>
       </div>
-      <div class="promo-grid">
+      <div class="reveal promo-grid">
         <button type="button" class="promo-card promo-wide" data-full="images/promo-every-celebration.jpg">
           <img src="images/promo-every-celebration.jpg" alt="Poster: Every celebration deserves something sweet" loading="lazy" width="1400" height="1045">
         </button>
@@ -260,9 +298,29 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer-row">
-    <span class="footer-brand"><span class="brand-mark brand-mark-sm" aria-hidden="true">S</span> Sultana Food Industry</span>
-    <span>© 2026 Sultana Food Industry · Laddoo, desserts &amp; event catering, Malaysia</span>
+  <div class="container footer-grid">
+    <div class="footer-col footer-about">
+      <span class="footer-brand"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-text"><span class="brand-name">Sultana</span><span class="brand-sub">FOOD INDUSTRY</span></span></span>
+      <p>Traditional laddoo, desserts and drinks, handcrafted for every celebration in Malaysia.</p>
+    </div>
+    <nav class="footer-col" aria-label="Footer">
+      <h2 class="footer-title">Explore</h2>
+      <a href="#products">Products</a>
+      <a href="#packages">Wedding packages</a>
+      <a href="#events">Events &amp; catering</a>
+      <a href="#promotions">Promotions</a>
+      <a href="#distributor">Become a stockist</a>
+    </nav>
+    <div class="footer-col">
+      <h2 class="footer-title">Order</h2>
+      <a href="#contact" data-wa="">WhatsApp: <span data-wa-display>Coming soon</span></a>
+      <a href="#contact">Enquiry form</a>
+      <span>Delivery across Malaysia</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Sultana Food Industry. All rights reserved.</span>
+    <a href="#top">Back to top ↑</a>
   </div>
 </footer>
 
