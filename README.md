@@ -1,4 +1,4 @@
-# U4 NUR Wedding Laddoo · Sultana Food Industry website
+# Sultana Food Industry website
 
 Static one-page site (HTML + CSS + a little JS). No build step is needed.
 
@@ -6,9 +6,9 @@ Static one-page site (HTML + CSS + a little JS). No build step is needed.
 
 - `index.html`: page content
 - `styles.css`: styling (brand colors are CSS variables at the top)
-- `script.js`: scrolling promo bar and the enquiry form (sends to WhatsApp `WHATSAPP_NUMBER`)
-- `images/`: product photos, cropped from the U4 NUR poster (`images/u4-nur-poster.jpg`)
-- `favicon.ico`, `favicon-32x32.png`, `apple-touch-icon.png`: U4 logo icons
+- `script.js`: scrolling promo bar, WhatsApp settings and the enquiry form
+- `images/`: product photos
+- `favicon.svg`, `favicon.ico`, `favicon-32x32.png`, `apple-touch-icon.png`: the "S" logo icons
 - `vercel.json`: Vercel settings
 
 ## Run locally
@@ -27,4 +27,15 @@ The promo messages are in the `promo-bar` block at the top of `index.html`. Edit
 
 ## Photos
 
-Current photos are cropped from the promo poster, so they are fairly small. For sharper images, replace the files in `images/` with original photos using the same file names.
+To use sharper photos, replace the files in `images/` with originals using the same file names.
+
+## Setting the WhatsApp number
+
+Open `script.js` and fill in the two lines at the top:
+
+```js
+const WHATSAPP_NUMBER = '60123456789';   // country code + number, digits only
+const WHATSAPP_DISPLAY = '012-345 6789'; // how it appears on the page
+```
+
+Every order button, the enquiry form and the floating chat button then open WhatsApp with a pre-filled message. Until it is set, those buttons scroll to the contact form.
