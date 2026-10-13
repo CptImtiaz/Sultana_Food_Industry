@@ -7,7 +7,7 @@ Static one-page site (HTML + CSS + a little JS). No build step is needed.
 - `index.html`: page content
 - `styles.css`: styling (brand colors are CSS variables at the top)
 - `script.js`: scrolling promo bar, WhatsApp settings and the enquiry form
-- `images/`: product photos
+- `images/`: product photos, event photos and promotion posters (`promo-*.jpg`, shown full size in the Promotions section)
 - `favicon.svg`, `favicon.ico`, `favicon-32x32.png`, `apple-touch-icon.png`: the "S" logo icons
 - `vercel.json`: Vercel settings
 

@@ -76,3 +76,17 @@ form.addEventListener('submit', (event) => {
     status.textContent = 'Thank you! WhatsApp ordering opens soon. Please check back shortly.';
   }
 });
+
+// Promotion posters open full size in a lightbox.
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = lightbox.querySelector('img');
+document.querySelectorAll('[data-full]').forEach((card) => {
+  card.addEventListener('click', () => {
+    lightboxImg.src = card.dataset.full;
+    lightboxImg.alt = card.querySelector('img').alt;
+    lightbox.showModal();
+  });
+});
+lightbox.addEventListener('click', (event) => {
+  if (event.target === lightbox) lightbox.close();
+});
