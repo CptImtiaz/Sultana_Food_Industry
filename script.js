@@ -1,6 +1,20 @@
-// Set the business WhatsApp number (country code, digits only, e.g. "60123456789")
-// and enquiries will open WhatsApp with the message pre-filled.
-const WHATSAPP_NUMBER = '';
+// Business WhatsApp number (country code, digits only). Enquiries open WhatsApp pre-filled.
+const WHATSAPP_NUMBER = '60122312214';
+
+// Duplicate the promo messages so the scrolling bar loops seamlessly.
+const promoTrack = document.querySelector('.promo-track');
+if (promoTrack && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const sep = document.createElement('span');
+  sep.textContent = '✦';
+  sep.setAttribute('aria-hidden', 'true');
+  promoTrack.append(sep);
+  [...promoTrack.children].forEach((item) => {
+    const copy = item.cloneNode(true);
+    copy.setAttribute('aria-hidden', 'true');
+    if (copy.tagName === 'A') copy.tabIndex = -1;
+    promoTrack.append(copy);
+  });
+}
 
 const form = document.getElementById('enquiry');
 const status = document.getElementById('form-status');
@@ -29,17 +43,13 @@ form.addEventListener('submit', (event) => {
   }
 
   const text = [
-    'Hello Sultana Food Industry,',
+    'Hello U4 NUR Wedding Laddoo,',
     `Name: ${name.value.trim()}`,
     `Phone: ${phone.value.trim()}`,
     `Interested in: ${interest.value}`,
     message.value.trim() && `Message: ${message.value.trim()}`,
   ].filter(Boolean).join('\n');
 
-  if (WHATSAPP_NUMBER) {
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
-    status.textContent = 'Opening WhatsApp with your enquiry…';
-  } else {
-    status.textContent = 'Thank you! Online enquiries are coming soon. Please contact us using the details on this page.';
-  }
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  status.textContent = 'Opening WhatsApp with your enquiry…';
 });
