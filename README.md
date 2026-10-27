@@ -9,7 +9,8 @@ Static one-page site (HTML + CSS + a little JS). No build step is needed.
 - `script.js`: scrolling promo bar, WhatsApp settings and the enquiry form
 - `images/`: product photos, event photos and promotion posters (`promo-*.jpg`, shown full size in the Promotions section)
 - `favicon.svg`, `favicon.ico`, `favicon-32x32.png`, `apple-touch-icon.png`: the "S" logo icons
-- `vercel.json`: Vercel settings
+- `vercel.json`: Vercel settings and security headers
+- `robots.txt`, `sitemap.xml`, `llms.txt`: search engine and AI files
 
 ## Run locally
 
@@ -39,3 +40,12 @@ const WHATSAPP_DISPLAY = '012-345 6789'; // how it appears on the page
 ```
 
 Every order button, the enquiry form and the floating chat button then open WhatsApp with a pre-filled message. Until it is set, those buttons scroll to the contact form.
+
+The number is also written into `index.html` (the WhatsApp links, the contact and footer text, the FAQ and the structured data in `<head>`) and `llms.txt`, so search engines and AI tools can read it without running JavaScript. When the number changes, search for `60168009417` and `016-800 9417` and update those too.
+
+## SEO and security files
+
+- `robots.txt` and `sitemap.xml`: let search engines find the site. Submit `https://sultanafood.com/sitemap.xml` in Google Search Console.
+- `llms.txt`: a plain-text summary of the business for AI assistants.
+- Structured data (JSON-LD) in `<head>`: business details and the FAQ, so Google can show them in results. Keep the FAQ answers there in sync with the FAQ section.
+- `vercel.json`: security headers, including a Content-Security-Policy. The inline script in `<head>` is allowed by its SHA-256 hash; if you edit that line, update the hash in the policy (or the script stops running). Adding scripts or styles from another site also needs a policy change.
