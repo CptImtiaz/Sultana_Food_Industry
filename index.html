@@ -24,9 +24,9 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Great+Vibes&family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="preload" href="/fonts/outfit-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/yeseva-one-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="images/hero-laddoo-990.webp" imagesrcset="images/hero-laddoo-480.webp 480w, images/hero-laddoo-800.webp 800w, images/hero-laddoo-990.webp 990w" imagesizes="(max-width: 760px) 92vw, 560px" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -181,8 +181,8 @@
       </ul>
     </div>
     <figure class="hero-photo">
-      <img src="images/hero-laddoo.jpg" alt="Laddoo piled on a brass stand, surrounded by roses, jasmine and saffron" width="990" height="1313" fetchpriority="high">
-      <img class="hero-inset" src="images/gift-box-sultana.jpg" alt="Sultana Signature Gift Box of laddoo" width="1000" height="789" loading="lazy">
+      <img src="images/hero-laddoo-990.webp" srcset="images/hero-laddoo-480.webp 480w, images/hero-laddoo-800.webp 800w, images/hero-laddoo-990.webp 990w" sizes="(max-width: 760px) 92vw, 560px" alt="Laddoo piled on a brass stand, surrounded by roses, jasmine and saffron" width="990" height="1313" fetchpriority="high">
+      <img class="hero-inset" src="images/gift-box-sultana-1000.webp" srcset="images/gift-box-sultana-480.webp 480w, images/gift-box-sultana-800.webp 800w, images/gift-box-sultana-1000.webp 1000w" sizes="(max-width: 760px) 42vw, 260px" alt="Sultana Signature Gift Box of laddoo" width="1000" height="789" loading="lazy">
       <figcaption class="hero-badge">Freshly<br>made<br>daily</figcaption>
     </figure>
   </section>
@@ -207,7 +207,7 @@
     </div>
     <div class="reveal grid-products">
       <article class="card">
-        <img class="card-img" src="images/laddoo-platter.jpg" alt="Stack of fresh laddoo on a gold platter" loading="lazy" width="534" height="405">
+        <img class="card-img" src="images/laddoo-platter-534.webp" srcset="images/laddoo-platter-480.webp 480w, images/laddoo-platter-534.webp 534w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 46vw, 380px" alt="Stack of fresh laddoo on a gold platter" loading="lazy" width="534" height="405">
         <div class="card-body">
           <h3>Laddoo Trays</h3>
           <p class="muted">Golden, fragrant laddoo arranged on trays for kenduri, open houses and family gatherings.</p>
@@ -215,7 +215,7 @@
         </div>
       </article>
       <article class="card">
-        <img class="card-img" src="images/thank-you-favours.jpg" alt="Laddoo in floral Thank You pouches on marble with a burgundy ribbon" loading="lazy" width="1000" height="800">
+        <img class="card-img" src="images/thank-you-favours-1000.webp" srcset="images/thank-you-favours-480.webp 480w, images/thank-you-favours-800.webp 800w, images/thank-you-favours-1000.webp 1000w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 46vw, 380px" alt="Laddoo in floral Thank You pouches on marble with a burgundy ribbon" loading="lazy" width="1000" height="800">
         <div class="card-body">
           <h3>“Thank You” Wedding Favours</h3>
           <p class="muted">Each laddoo sealed in its own floral Thank You pouch: the perfect door gift kahwin, ready to hand to every guest at your walimah.</p>
@@ -223,7 +223,7 @@
         </div>
       </article>
       <article class="card">
-        <img class="card-img" src="images/gift-box-sultana.jpg" alt="Maroon Sultana gift box with six laddoo topped with nuts and silver leaf" loading="lazy" width="1000" height="789">
+        <img class="card-img" src="images/gift-box-sultana-1000.webp" srcset="images/gift-box-sultana-480.webp 480w, images/gift-box-sultana-800.webp 800w, images/gift-box-sultana-1000.webp 1000w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 46vw, 380px" alt="Maroon Sultana gift box with six laddoo topped with nuts and silver leaf" loading="lazy" width="1000" height="789">
         <div class="card-body">
           <h3>Signature Gift Box</h3>
           <p class="muted">Six premium laddoo with cashew, pistachio and silver leaf in our maroon S box. Perfect for corporate gifts and Hari Raya.</p>
@@ -239,7 +239,7 @@
     </div>
     <div class="reveal grid-feature">
       <article class="feature-card">
-        <img src="images/lai-chee-kang.jpg" alt="Lai Chee Kang in a gold-rimmed glass bowl with lychee, longan, red dates and white fungus" loading="lazy" width="1000" height="915">
+        <img src="images/lai-chee-kang-1000.webp" srcset="images/lai-chee-kang-480.webp 480w, images/lai-chee-kang-800.webp 800w, images/lai-chee-kang-1000.webp 1000w" sizes="(max-width: 1000px) 92vw, 280px" alt="Lai Chee Kang in a gold-rimmed glass bowl with lychee, longan, red dates and white fungus" loading="lazy" width="1000" height="915">
         <div class="feature-card-body">
           <p class="tagline">Chilled · Light · Traditional</p>
           <h3>Lai Chee Kang</h3>
@@ -248,7 +248,7 @@
         </div>
       </article>
       <article class="feature-card">
-        <img src="images/air-limau-jelly.jpg" alt="Tall glass of Air Limau Jelly with lime slices, mint and colourful jelly cubes" loading="lazy" width="700" height="1613" class="img-tall">
+        <img src="images/air-limau-jelly-700.webp" srcset="images/air-limau-jelly-480.webp 480w, images/air-limau-jelly-700.webp 700w" sizes="(max-width: 1000px) 92vw, 240px" alt="Tall glass of Air Limau Jelly with lime slices, mint and colourful jelly cubes" loading="lazy" width="700" height="1613" class="img-tall">
         <div class="feature-card-body">
           <p class="tagline">Sejuk · Segar · Manis</p>
           <h3>Air Limau Jelly</h3>
@@ -313,7 +313,7 @@
 
   <section id="events" class="events">
     <div class="events-banner">
-      <img src="images/events-ballroom.jpg" alt="Ballroom dessert table with trays of laddoo, fruit punch bowls and floral arrangements" loading="lazy" width="1120" height="1056">
+      <img src="images/events-ballroom-1120.webp" srcset="images/events-ballroom-480.webp 480w, images/events-ballroom-800.webp 800w, images/events-ballroom-1120.webp 1120w" sizes="100vw" alt="Ballroom dessert table with trays of laddoo, fruit punch bowls and floral arrangements" loading="lazy" width="1120" height="1056">
       <div class="container events-panel-wrap">
         <div class="events-panel">
           <span class="eyebrow eyebrow-gold">EVENTS &amp; CATERING</span>
@@ -327,9 +327,9 @@
       </div>
     </div>
     <div class="reveal container events-strip">
-      <figure><img src="images/events-garden.jpg" alt="Outdoor sunset reception with laddoo towers and candelabras" loading="lazy" width="1155" height="1116"><figcaption>Garden receptions</figcaption></figure>
-      <figure><img src="images/events-table.jpg" alt="Long banquet table with laddoo trays, Lai Chee Kang and orange drinks" loading="lazy" width="1130" height="1016"><figcaption>Banquet dessert tables</figcaption></figure>
-      <figure><img src="images/gift-box-sultana.jpg" alt="Sultana gift box on a wedding table" loading="lazy" width="1000" height="789"><figcaption>Gifts for your guests</figcaption></figure>
+      <figure><img src="images/events-garden-1155.webp" srcset="images/events-garden-480.webp 480w, images/events-garden-800.webp 800w, images/events-garden-1155.webp 1155w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 46vw, 380px" alt="Outdoor sunset reception with laddoo towers and candelabras" loading="lazy" width="1155" height="1116"><figcaption>Garden receptions</figcaption></figure>
+      <figure><img src="images/events-table-1130.webp" srcset="images/events-table-480.webp 480w, images/events-table-800.webp 800w, images/events-table-1130.webp 1130w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 46vw, 380px" alt="Long banquet table with laddoo trays, Lai Chee Kang and orange drinks" loading="lazy" width="1130" height="1016"><figcaption>Banquet dessert tables</figcaption></figure>
+      <figure><img src="images/gift-box-sultana-1000.webp" srcset="images/gift-box-sultana-480.webp 480w, images/gift-box-sultana-800.webp 800w, images/gift-box-sultana-1000.webp 1000w" sizes="(max-width: 640px) 92vw, (max-width: 1000px) 46vw, 380px" alt="Sultana gift box on a wedding table" loading="lazy" width="1000" height="789"><figcaption>Gifts for your guests</figcaption></figure>
     </div>
   </section>
 
@@ -341,20 +341,20 @@
         <p class="muted lead">Tap a poster to see it full size.</p>
       </div>
       <div class="reveal promo-grid">
-        <button type="button" class="promo-card promo-wide" data-full="images/promo-every-celebration.jpg">
-          <img src="images/promo-every-celebration.jpg" alt="Poster: Every celebration deserves something sweet" loading="lazy" width="1400" height="1045">
+        <button type="button" class="promo-card promo-wide" data-full="images/promo-every-celebration-1200.webp">
+          <img src="images/promo-every-celebration-1200.webp" srcset="images/promo-every-celebration-480.webp 480w, images/promo-every-celebration-800.webp 800w, images/promo-every-celebration-1200.webp 1200w" sizes="(max-width: 860px) 92vw, 600px" alt="Poster: Every celebration deserves something sweet" loading="lazy" width="1400" height="1045">
         </button>
-        <button type="button" class="promo-card promo-tall" data-full="images/promo-manisan-hari-bahagia.jpg">
-          <img src="images/promo-manisan-hari-bahagia.jpg" alt="Poster: Manisan Hari Bahagia, Sultana laddoo gift box for walimah, kenduri and majlis" loading="lazy" width="1116" height="2000">
+        <button type="button" class="promo-card promo-tall" data-full="images/promo-manisan-hari-bahagia-1116.webp">
+          <img src="images/promo-manisan-hari-bahagia-1116.webp" srcset="images/promo-manisan-hari-bahagia-480.webp 480w, images/promo-manisan-hari-bahagia-800.webp 800w, images/promo-manisan-hari-bahagia-1116.webp 1116w" sizes="(max-width: 860px) 46vw, 300px" alt="Poster: Manisan Hari Bahagia, Sultana laddoo gift box for walimah, kenduri and majlis" loading="lazy" width="1116" height="2000">
         </button>
-        <button type="button" class="promo-card" data-full="images/promo-lai-chee-kang.jpg">
-          <img src="images/promo-lai-chee-kang.jpg" alt="Poster: Lai Chee Kang, chilled, light and traditional" loading="lazy" width="1400" height="1875">
+        <button type="button" class="promo-card" data-full="images/promo-lai-chee-kang-1200.webp">
+          <img src="images/promo-lai-chee-kang-1200.webp" srcset="images/promo-lai-chee-kang-480.webp 480w, images/promo-lai-chee-kang-800.webp 800w, images/promo-lai-chee-kang-1200.webp 1200w" sizes="(max-width: 860px) 46vw, 300px" alt="Poster: Lai Chee Kang, chilled, light and traditional" loading="lazy" width="1400" height="1875">
         </button>
-        <button type="button" class="promo-card promo-wide" data-full="images/promo-untuk-majlis.jpg">
-          <img src="images/promo-untuk-majlis.jpg" alt="Poster: Untuk majlis yang bermakna, walimah, kenduri, majlis korporat dan hotel" loading="lazy" width="1400" height="781">
+        <button type="button" class="promo-card promo-wide" data-full="images/promo-untuk-majlis-1200.webp">
+          <img src="images/promo-untuk-majlis-1200.webp" srcset="images/promo-untuk-majlis-480.webp 480w, images/promo-untuk-majlis-800.webp 800w, images/promo-untuk-majlis-1200.webp 1200w" sizes="(max-width: 860px) 92vw, 600px" alt="Poster: Untuk majlis yang bermakna, walimah, kenduri, majlis korporat dan hotel" loading="lazy" width="1400" height="781">
         </button>
-        <button type="button" class="promo-card" data-full="images/promo-air-limau-jelly.jpg">
-          <img src="images/promo-air-limau-jelly.jpg" alt="Poster: Air Limau Jelly, sejuk, segar, manis" loading="lazy" width="1400" height="1400">
+        <button type="button" class="promo-card" data-full="images/promo-air-limau-jelly-1200.webp">
+          <img src="images/promo-air-limau-jelly-1200.webp" srcset="images/promo-air-limau-jelly-480.webp 480w, images/promo-air-limau-jelly-800.webp 800w, images/promo-air-limau-jelly-1200.webp 1200w" sizes="(max-width: 860px) 46vw, 300px" alt="Poster: Air Limau Jelly, sejuk, segar, manis" loading="lazy" width="1400" height="1400">
         </button>
       </div>
     </div>
