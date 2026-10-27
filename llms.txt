@@ -1,27 +1,30 @@
 # Sultana Food Industry
 
-> Maker of traditional handmade laddoo (laddu), Thank You wedding favours (door gifts for weddings / door gift kahwin), gift boxes, chilled desserts and drinks, and dessert table catering. Based in Selangor, Malaysia, with delivery across Malaysia.
+> Maker of traditional handmade laddoo (laddu), Thank You wedding favours (door gifts for weddings / door gift kahwin), gift boxes, chilled desserts and drinks, and dessert table catering. Based in Selangor, Malaysia, with delivery across Malaysia. Orders and quotes by WhatsApp: +60 16-800 9417. Prices are quoted per order.
 
-- Website: https://sultanafood.com/
-- WhatsApp / phone: +60 16-800 9417 (https://wa.me/60168009417)
-- Location: Selangor, Malaysia. Delivers across Malaysia.
-- Languages: English, Bahasa Melayu
+Languages: English and Bahasa Melayu.
+
+## Main pages
+
+- [Home](https://sultanafood.com/): products, wedding packages, events, promotions and how to order
+- [Products](https://sultanafood.com/#products): laddoo trays, Thank You wedding favours, Signature Gift Box, Lai Chee Kang and Air Limau Jelly
+- [Wedding & event packages](https://sultanafood.com/#packages): 100, 500 (most popular) and 1000 pieces, each laddoo individually packed in a Thank You pouch
+- [Events & catering](https://sultanafood.com/#events): dessert tables with laddoo towers, Lai Chee Kang and chilled drinks for walimah, kenduri, weddings, corporate events, hotels, Hari Raya and Deepavali
+- [Become a stockist](https://sultanafood.com/#distributor): wholesale pricing, steady supply and point-of-sale display support for shops, cafés and resellers
+
+## Contact and ordering
+
+- [Order on WhatsApp](https://wa.me/60168009417): send the event date, quantity and delivery area; Sultana replies with availability and a quote
+- [Enquiry form](https://sultanafood.com/#contact): name, phone and what you need, sent through WhatsApp
 
 ## Products
-- Laddoo Trays: laddoo arranged on trays for kenduri, open houses and family gatherings.
-- "Thank You" Wedding Favours: each laddoo sealed in its own floral Thank You pouch, for guests at a walimah or wedding.
-- Signature Gift Box: six premium laddoo with cashew, pistachio and silver leaf in a maroon box; for corporate gifts and Hari Raya.
-- Lai Chee Kang: chilled dessert of lychee, longan, red dates, white fungus, barley and grass jelly in light syrup.
-- Air Limau Jelly: calamansi lime drink with colourful jelly, nata de coco and selasih seeds over ice.
 
-## Wedding & event packages
-Laddoo packages of 100, 500 (most popular) and 1000 pieces, each laddoo individually packed in a Thank You pouch.
+- [Laddoo Trays](https://sultanafood.com/#products): laddoo arranged on trays for kenduri, open houses and family gatherings
+- ["Thank You" Wedding Favours](https://sultanafood.com/#products): each laddoo sealed in its own floral Thank You pouch, for guests at a walimah or wedding
+- [Signature Gift Box](https://sultanafood.com/#products): six premium laddoo with cashew, pistachio and silver leaf in a maroon box; for corporate gifts and Hari Raya
+- [Lai Chee Kang](https://sultanafood.com/#products): chilled dessert of lychee, longan, red dates, white fungus, barley and grass jelly in light syrup
+- [Air Limau Jelly](https://sultanafood.com/#products): calamansi lime drink with colourful jelly, nata de coco and selasih seeds over ice
 
-## Events & catering
-Dessert tables with laddoo towers, Lai Chee Kang and chilled drinks for walimah, kenduri, weddings, corporate events, hotels and cafés, Hari Raya and Deepavali.
+## Optional
 
-## Ordering
-Send the event date, quantity and delivery area by WhatsApp (016-800 9417). Sultana replies with availability and a quote. Prices are quoted per order.
-
-## Stockists
-Sweet shops, mini markets, cafés and resellers can apply for wholesale pricing, steady supply and point-of-sale display support.
+- [Sitemap](https://sultanafood.com/sitemap.xml)
