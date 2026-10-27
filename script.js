@@ -2,8 +2,8 @@
 // WHATSAPP_NUMBER: country code + number, digits only (e.g. '60123456789' for 012-345 6789).
 // WHATSAPP_DISPLAY: how the number is shown on the page (e.g. '012-345 6789').
 // While WHATSAPP_NUMBER is empty, order buttons scroll to the contact form instead.
-const WHATSAPP_NUMBER = '';
-const WHATSAPP_DISPLAY = '';
+const WHATSAPP_NUMBER = '60168009417';
+const WHATSAPP_DISPLAY = '016-800 9417';
 
 const waLink = (text) =>
   `https://wa.me/${WHATSAPP_NUMBER}${text ? `?text=${encodeURIComponent(text)}` : ''}`;
