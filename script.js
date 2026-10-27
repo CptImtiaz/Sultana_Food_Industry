@@ -1,5 +1,5 @@
 // ===== WhatsApp settings =====
-// The number also appears in index.html (links, footer, FAQ and the structured data
+// The number also appears in index.html (links, footer and the structured data
 // in <head>) so search engines and AI tools can read it; change it there too.
 // WHATSAPP_NUMBER: country code + number, digits only (e.g. '60123456789' for 012-345 6789).
 // WHATSAPP_DISPLAY: how the number is shown on the page (e.g. '012-345 6789').
